@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Tema1Ejercicio8 {
+public class Tema0Ejercicio8 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Introduce dos numeros enteros");
