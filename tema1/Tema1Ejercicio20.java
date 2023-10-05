@@ -21,12 +21,12 @@ public class Tema1Ejercicio20 {
                     System.out.println(a);
                     a = a + 2;
                 }
-            }else if (b < a) {
-                System.out.println("El primer número es mayor");
-
-            }
+        } else if (b < a) {
+            System.out.println("El primer número es mayor");
 
         }
+
     }
+}
 
 
