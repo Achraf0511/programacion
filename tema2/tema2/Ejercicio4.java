@@ -6,10 +6,31 @@ import java.util.Scanner;
 public class Ejercicio4 {
 
     public static void main(String[] args) {
-        System.out.println("Intruduce la cantidad de euros que deseas convertir a dólares o la cantidad de dólares que deseas convertir a euros");
+        showMenu();
         Scanner in = new Scanner(System.in);
-        double euros = in.nextInt();
-        double dolares = in.nextInt();
+        int showMenu = in.nextInt();
+        switch (showMenu) {
+
+            case 1:
+                System.out.println("Cantidad de euros a convertir a dólares: ");
+                double euros = in.nextInt();
+                System.out.println(euro2dollar(euros));
+                break;
+            case 2:
+                System.out.println("Cantidad de dólares  a convertir a euros: ");
+                double dolares = in.nextInt();
+                System.out.println(dollar2euro(dolares));
+                break;
+
+        }
+
+
+    }
+
+
+    public static void showMenu() {
+        System.out.println("1. Pasar de euros a dólares");
+        System.out.println("2. Pasar de dólares a euros");
 
     }
 
