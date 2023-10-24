@@ -10,25 +10,25 @@ public class Ejercicio5 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingresa un número entero de 1 a 10: ");
-        int numero = scanner.nextInt();
-        System.out.println(tablaMultiplicar(numero));
+        int numero1 = scanner.nextInt();
+        System.out.println(tablaMultiplicar(numero1));
     }
 
 
-    public static int tablaMultiplicar(int numero) {
+    public static int tablaMultiplicar(int numero1) {
 
 
-        if (numero >= 1 && numero <= 10) {
-            System.out.println("Tabla de multiplicar del " + numero + ":");
+        if (numero1 >= 1 && numero1 <= 10) {
+            System.out.println("Tabla de multiplicar del " + numero1 + ":");
 
             for (int i = 1; i <= 10; i++) {
-                int resultado = numero * i;
-                System.out.println(numero + " x " + i + " = " + resultado);
+                int resultado = numero1 * i;
+                System.out.println(numero1 + " x " + i + " = " + resultado);
             }
         } else {
             System.out.println("El número ingresado no está en el rango válido.");
         }
-        return numero;
+        return numero1;
 
 
     }

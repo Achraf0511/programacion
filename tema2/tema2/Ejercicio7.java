@@ -4,25 +4,25 @@ public class Ejercicio7 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int numero;
+        int numero7;
 
 
         do {
             System.out.print("Introduce un número entero positivo (o 0 para salir): ");
-            numero = scanner.nextInt();
+            numero7 = scanner.nextInt();
 
-            if (numero > 0) {
-                if (esPrimo(numero)) {
-                    System.out.println(numero + " es primo.");
+            if (numero7 > 0) {
+                if (esPrimo(numero7)) {
+                    System.out.println(numero7 + " es primo.");
                 } else {
-                    System.out.println(numero + " no es primo.");
+                    System.out.println(numero7 + " no es primo.");
                 }
-            } else if (numero < 0) {
+            } else if (numero7 < 0) {
                 System.out.println("Por favor, introduce un número entero positivo.");
             }
 
-        } while (numero != 0);
-        System.out.println(esPrimo(numero));
+        } while (numero7 != 0);
+        System.out.println(esPrimo(numero7));
     }
 
     public static boolean esPrimo(int numero) {
