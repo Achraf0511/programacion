@@ -11,11 +11,11 @@ public class Ejercicio5 {
 
         System.out.print("Ingresa un número entero de 1 a 10: ");
         int numero1 = scanner.nextInt();
-        System.out.println(tablaMultiplicar(numero1));
+        tablaMultiplicar(numero1);
     }
 
 
-    public static int tablaMultiplicar(int numero1) {
+    public static void tablaMultiplicar(int numero1) {
 
 
         if (numero1 >= 1 && numero1 <= 10) {
@@ -28,7 +28,7 @@ public class Ejercicio5 {
         } else {
             System.out.println("El número ingresado no está en el rango válido.");
         }
-        return numero1;
+
 
 
     }

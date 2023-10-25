@@ -2,6 +2,8 @@ package tema2;
 
 import java.util.Scanner;
 
+import static tema2.Ejercicio5.tablaMultiplicar;
+import static tema2.Ejercicio6.tablaMultiplicar2;
 import static tema2.Ejercicio9.showPiramide;
 
 public class Ejercicio10 {
@@ -65,14 +67,14 @@ public class Ejercicio10 {
             case 6:
                 System.out.print("Ingresa un número entero de 1 a 10: ");
                 int numero1 = in.nextInt();
-                System.out.println(Ejercicio5.tablaMultiplicar(numero1));
+                tablaMultiplicar(numero1);
 
 
                 break;
 
 
             case 7:
-                System.out.println(Ejercicio6.tablaMultiplicar2());
+                tablaMultiplicar2();
 
 
                 break;
