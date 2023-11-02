@@ -1,6 +1,8 @@
 package tema2;
 
 public class MyMath {
+
+
     public static double squarePerimeter(double lado) {
         double perimetrocuadrado = 0;
         if (lado >= 0) {
@@ -24,10 +26,12 @@ public class MyMath {
 
     public static double rectanglePerimeter(double base, double altura) {
         double perimetrorectangulo = 0;
-        if (base >= 0 & altura >= 0) {
+        if (base > 0 & altura > 0) {
             perimetrorectangulo = 2 * base + 2 * altura;
 
 
+        } else if (base == 0 || altura == 0) {
+            perimetrorectangulo = 0;
         }
         return perimetrorectangulo;
     }
@@ -89,37 +93,116 @@ public class MyMath {
             }
         }
 
-        return true;
+        return false;
 
 
     }
 
     public static int figureCount(int numero) {
 
-        int x = 0;
-        while (numero != 0) {
-            numero = numero / 10;
-            x++;
+        int figures = 0;
+        if (numero == 0) {
+            figures = 1;
+        } else {
+            while (numero != 0) {
+                numero = numero / 10;
+                figures++;
+            }
         }
-        return x;
+
+        return figures;
 
     }
 
-    public static boolean evenFigureCount(int numero) {
-        boolean digitopar;
-        int x = 0;
-        while (numero != 0) {
-            numero = numero / 10;
-            x++;
-            if (x % 2 == 0) {
-                digitopar = true;
-            } else {
-                digitopar = false;
+    public static int evenFigureCount(int numero) {
+        int figures = 0;
+        if (numero == 0) {
+            figures = 1;
+        } else {
+            while (numero != 0) {
+                int candidato = numero % 10;
+                if (candidato % 2 == 0) {
+                    figures++;
+                }
+                numero = numero / 10;
             }
-            return digitopar;
+        }
+        return figures;
+    }
+
+
+    public static int oddFigureCount(int numero) {
+        int figures = 0;
+        if (numero == 0) {
+            figures = 0;
+        } else {
+            while (numero != 0) {
+                int candidato = numero % 10;
+                if (candidato % 2 != 0) {
+                    figures++;
+                }
+                numero = numero / 10;
+            }
+        }
+        return figures;
+
+
+    }
+
+    public static int factorial(int numero) {
+        int factorial = 1;
+        if (numero == 0) {
+            factorial = 1;
+        } else if (numero < 0) {
+            factorial = 0;
+        } else {
+            for (int a = 1; a <= numero; a++) {
+                factorial = factorial * a;
+            }
+
+
 
         }
+        return factorial;
 
+
+    }
+    public static int factorialRecursive(int numero) {
+        int factorial = 1;
+        if (numero == 0) {
+            factorial = 1;
+        } else if (numero < 0) {
+            factorial = 0;
+        } else {
+            for (int a = 1; a <= numero; a++) {
+                factorial = factorial * a;
+            }
+
+
+
+        }
+        return factorial;
+
+
+    }
+  public static int quadraticEcuationSolutions (int a, int b, int c){
+        int result;
+        int ecuacion = b*2-4*a*c;
+        if(ecuacion>0)result=2;
+        else if (ecuacion==0)result=1;
+        else result=0;
+        return result;
+    }
+public static int figuresSumatory (int numero){
+        int n=numero;
+        int sumatorio=0;
+        n= Math.abs(n);
+        while (n !=0){
+            int cantidad =n%10;
+            sumatorio += cantidad;
+            n=n/10;
+        }
+    return sumatorio;
 
     }
 }
