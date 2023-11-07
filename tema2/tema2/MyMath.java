@@ -82,18 +82,7 @@ public class MyMath {
 
 
     public static boolean isNotPrime(int numero) {
-        if (numero < 2) return true;
-        if (numero == 2 || numero == 3) return false;
-        if (numero % 2 == 0 || numero % 3 == 0) return true;
-
-        int sqrt = (int) Math.sqrt(numero) + 1;
-        for (int i = 5; i <= sqrt; i += 6) {
-            if (numero % i == 0 || numero % (i + 2) == 0) {
-                return true;
-            }
-        }
-
-        return false;
+        return isPrime(numero)==false;
 
 
     }
@@ -132,19 +121,7 @@ public class MyMath {
 
 
     public static int oddFigureCount(int numero) {
-        int figures = 0;
-        if (numero == 0) {
-            figures = 0;
-        } else {
-            while (numero != 0) {
-                int candidato = numero % 10;
-                if (candidato % 2 != 0) {
-                    figures++;
-                }
-                numero = numero / 10;
-            }
-        }
-        return figures;
+      return figureCount(numero)-evenFigureCount(numero);
 
 
     }
