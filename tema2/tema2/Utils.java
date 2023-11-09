@@ -62,9 +62,9 @@ public class Utils {
     }
 
 
-    public static int getNIF(int identificacion) {
+    public static char getNIF(int identificacion) {
         int letraidentificacion = identificacion % 23;
-        switch (identificacion) {
+        switch (letraidentificacion) {
             case 0:
                 identificacion = 'T';
                 break;
@@ -132,16 +132,19 @@ public class Utils {
                 break;
 
             case 16:
-                identificacion = 'Q';
+                identificacion = 'Q' ;
+
                 break;
 
 
             case 17:
                 identificacion = 'V';
+
                 break;
 
             case 18:
                 identificacion = 'H';
+
                 break;
 
 
@@ -151,22 +154,35 @@ public class Utils {
 
 
             case 20:
-                identificacion = 'C';
+                identificacion = 'C' ;
                 break;
 
             case 21:
-                identificacion = 'K';
+                identificacion = 'K' ;
+
                 break;
             case 22:
-                identificacion = 'E';
+                identificacion = 'E' ;
                 break;
+
 
 
         }
+        return (char) identificacion;
 
 
-        return identificacion;
+
     }
 
+    public static boolean isValidNIF( int identificacion, char letraidentificacion) {
+        boolean identificacionvalida=false;
+
+        if (Character.toUpperCase(letraidentificacion) == getNIF(identificacion)) {
+            identificacionvalida=true;
+
+        }
+        return identificacionvalida;
+
+    }
 }
 
