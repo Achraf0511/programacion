@@ -1,5 +1,3 @@
-
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -43,8 +41,6 @@ public class Videojuego2 {
         String opcion = in.nextLine();
         switch (opcion) {
             case "1":
-                playerSlection1();
-                startFight1();
                 vidamilitar = 200;
                 ataquemilitar = random.nextInt(50);
                 ataqueadicionalmilitar = random.nextInt(20);
@@ -55,10 +51,12 @@ public class Videojuego2 {
                 ataquemutanteadicional = random.nextInt(40);
                 defensamutante = random.nextInt(30);
                 velocidadmutante = random.nextInt(200);
+                playerSlection1();
+                startFight1();
+                break;
 
 
             case "2":
-                playerSelection2();
                 vidamedico = 200;
                 ataquemedico = random.nextInt(40);
                 ataqueadicionalmedico = random.nextInt(20);
@@ -69,6 +67,9 @@ public class Videojuego2 {
                 ataquemutanteadicional = random.nextInt(40);
                 defensamutante = random.nextInt(30);
                 velocidadmutante = random.nextInt(200);
+                playerSelection2();
+                startFight2();
+                break;
 
 
         }
@@ -90,13 +91,40 @@ public class Videojuego2 {
                 "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
                 "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 
-        System.out.println("Te presento a tu enemigo, Monster Mutant");
+        System.out.println("Te presento a tu enemigo, Monster Mutant" +
+
+                "         __.,,------.._\n" +
+                "      ,'\"   _      _   \"`.\n" +
+                /////////////////////////////////////////////////////////////// "     /.__, ._  -=- _\"`    Y\n" +
+                /////////////////////////////////////////////////////////////// "    (.____.-.`      \"\"`   j\n" +
+                "     VvvvvvV`.Y,.    _.,-'       ,     ,     ,\n" +
+                "        Y    ||,   '\"\\         ,/    ,/    ./\n" +
+                "        |   ,'  ,     `-..,'_,'/___,'/   ,'/   ,\n" +
+                "   ..  ,;,,',-'\"\\,'  ,  .     '     ' \"\"' '--,/    .. ..\n" +
+                " ,'. `.`---'     `, /  , Y -=-    ,'   ,   ,. .`-..||_|| ..\n" +
+                "ff\\\\`. `._        /f ,'j j , ,' ,   , f ,  \\=\\ Y   || ||`||_..\n" +
+                "l` \\` `.`.\"`-..,-' j  /./ /, , / , / /l \\   \\=\\l   || `' || ||...\n" +
+                " `  `   `-._ `-.,-/ ,' /`\"/-/-/-/-\"'''\"`.`.  `'.\\--`'--..`'_`' || ,\n" +
+                "            \"`-_,',  ,'  f    ,   /      `._    ``._     ,  `-.`'//         ,\n" +
+                "          ,-\"'' _.,-'    l_,-'_,,'          \"`-._ . \"`. /|     `.'\\ ,       |\n" +
+                "        ,',.,-'\"          \\=) ,`-.         ,    `-'._`.V |       \\ // .. . /j\n" +
+                "        |f\\\\               `._ )-.\"`.     /|         `.| |        `.`-||-\\\\/\n" +
+                "        l` \\`                 \"`._   \"`--' j          j' j          `-`---'\n" +
+                "         `  `                     \"`,-  ,'/       ,-'\"  /\n" +
+                "                                 ,'\",__,-'       /,, ,-'\n" +
+                "                                 Vvv'            VVv'");
+
+
+        System.out.println("/////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 
 
     }
 
+
     public static void playerSelection2() {
-        System.out.println("Escogiste a Logan, exingeniero armamentístico un chico listo capaz de crear cualquier cosa: agilidad=70 fuerza=70 velocidad=100 inteligencia=100" +
+        System.out.println("Escogiste a Logan, excirujano  un chico listo con grandes capacidades: agilidad=70 fuerza=70 velocidad=100 inteligencia=100" +
                 "    [___________]\n" +
                 "                               {=========}\n" +
                 "                             .-'         '-.\n" +
@@ -114,6 +142,34 @@ public class Videojuego2 {
 
 
         System.out.println("Te presento a tu enemigo, Monster Mutant");
+        System.out.println("Te presento a tu enemigo, Monster Mutant" +
+
+
+                "         __.,,------.._\n" +
+                "      ,'\"   _      _   \"`.\n" +
+                /////////////////////////////////////////////////////////////// "     /.__, ._  -=- _\"`    Y\n" +
+                /////////////////////////////////////////////////////////////// "    (.____.-.`      \"\"`   j\n" +
+                "     VvvvvvV`.Y,.    _.,-'       ,     ,     ,\n" +
+                "        Y    ||,   '\"\\         ,/    ,/    ./\n" +
+                "        |   ,'  ,     `-..,'_,'/___,'/   ,'/   ,\n" +
+                "   ..  ,;,,',-'\"\\,'  ,  .     '     ' \"\"' '--,/    .. ..\n" +
+                " ,'. `.`---'     `, /  , Y -=-    ,'   ,   ,. .`-..||_|| ..\n" +
+                "ff\\\\`. `._        /f ,'j j , ,' ,   , f ,  \\=\\ Y   || ||`||_..\n" +
+                "l` \\` `.`.\"`-..,-' j  /./ /, , / , / /l \\   \\=\\l   || `' || ||...\n" +
+                " `  `   `-._ `-.,-/ ,' /`\"/-/-/-/-\"'''\"`.`.  `'.\\--`'--..`'_`' || ,\n" +
+                "            \"`-_,',  ,'  f    ,   /      `._    ``._     ,  `-.`'//         ,\n" +
+                "          ,-\"'' _.,-'    l_,-'_,,'          \"`-._ . \"`. /|     `.'\\ ,       |\n" +
+                "        ,',.,-'\"          \\=) ,`-.         ,    `-'._`.V |       \\ // .. . /j\n" +
+                "        |f\\\\               `._ )-.\"`.     /|         `.| |        `.`-||-\\\\/\n" +
+                "        l` \\`                 \"`._   \"`--' j          j' j          `-`---'\n" +
+                "         `  `                     \"`,-  ,'/       ,-'\"  /\n" +
+                "                                 ,'\",__,-'       /,, ,-'\n" +
+                "                                 Vvv'            VVv'");
+
+
+        System.out.println("/////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 
 
     }
@@ -126,46 +182,49 @@ public class Videojuego2 {
             System.out.println("Vida mutante " + vidamutante);
             System.out.println("///////////////////////////////////////////////////////////////");
             while (vidamilitar > 0 & vidamutante > 0) {
+                velocidadmilitar = random.nextInt(200);
+                velocidadmutante = random.nextInt(200);
                 if (velocidadmilitar > velocidadmutante) {
-                    System.out.println(dañomilitar());
+                    dañomilitar();
                 } else if (velocidadmutante > velocidadmilitar) {
-                    System.out.println(dañomutante());
-
-
+                    dañomutante();
                 }
-
-
             }
-
+            break;
         }
+        if (vidamilitar <= 0 || vidamutante <= 0) {
+            endgame();
+        }
+
         return 0;
     }
 
     public static int dañomilitar() {
+        ataquemilitar = random.nextInt(50);
         System.out.println("Turno de Mike");
-        System.out.println("Daño de ataque:");
-        System.out.println(ataquemilitar);
         if (defensamutante > 33) {
+            System.out.println("Daño de ataque:" + ataquemilitar);
             System.out.println("Defensa  del mutante nula");
             System.out.println(" Vida restante del mutante:");
             System.out.println(Math.max(vidamutante -= ataquemilitar, 0));
             healthbarmutante = "-".repeat(Math.max(0, vidamutante));
             System.out.println("Barra de vida del mutante:" + healthbarmutante);
             System.out.println("Daño adicional inflingido:");
-            System.out.println(ataqueadicionalmilitar);
+            System.out.println(ataqueadicionalmilitar = random.nextInt(20));
             System.out.println(" Vida restante del mutante:");
             System.out.println(Math.max(vidamutante -= ataqueadicionalmilitar, 0));
             healthbarmutante = "-".repeat(Math.max(0, vidamutante));
             System.out.println("Barra de vida del mutante: " + healthbarmutante);
             System.out.println("///////////////////////////////////////////////////////////////");
         } else if (defensamutante <= 33) {
+            System.out.println("Daño de ataque:" + ataquemilitar);
             System.out.println("Defensa  del mutante ejecutada");
             System.out.println(" Vida restante del mutante:");
             System.out.println(Math.max(0, vidamutante));
             healthbarmutante = "-".repeat(Math.max(0, vidamutante));
             System.out.println("Barra de vida del mutante: " + healthbarmutante);
             System.out.println("Daño adicional inflingido:");
-            System.out.println(ataqueadicionalmilitar);
+            System.out.println(ataqueadicionalmilitar = random.nextInt(20));
             System.out.println(" Vida restante del mutante:");
             System.out.println(Math.max(vidamutante -= ataqueadicionalmilitar, 0));
             healthbarmutante = "-".repeat(Math.max(0, vidamutante));
@@ -174,38 +233,37 @@ public class Videojuego2 {
 
 
         }
-
         return 0;
+
+
     }
 
     public static int dañomutante() {
-
+        ataquemutante = random.nextInt(50);
         System.out.println("Turno del Mutante");
         if (defensamilitar > 33) {
-            System.out.println("Daño de ataque:");
-            System.out.println(ataquemutante);
+            System.out.println("Daño de ataque:" + ataquemutante);
             System.out.println("Defensa del militar nula ");
             System.out.println(" Vida restante del militar:");
             System.out.println(Math.max(vidamilitar -= ataquemutante, 0));
             healthbarmilitar = "-".repeat(Math.max(0, vidamilitar));
             System.out.println("Barra de vida del militar: " + healthbarmilitar);
             System.out.println("Daño adicional inflingido:");
-            System.out.println(ataquemutanteadicional);
+            System.out.println(ataquemutanteadicional = random.nextInt(20));
             System.out.println(" Vida restante del militar:");
             System.out.println(Math.max(vidamilitar -= ataquemutanteadicional, 0));
             healthbarmilitar = "-".repeat(Math.max(0, vidamilitar));
             System.out.println("Barra de vida del militar: " + healthbarmilitar);
             System.out.println("///////////////////////////////////////////////////////////////");
         } else if (defensamilitar <= 33) {
-            System.out.println("Daño de ataque:");
-            System.out.println(ataquemutante);
+            System.out.println("Daño de ataque:" + ataquemutante);
             System.out.println("Defensa del militar ejecutada ");
             System.out.println(" Vida restante del militar:");
             System.out.println(Math.max(vidamilitar, 0));
             healthbarmilitar = "-".repeat(Math.max(0, vidamilitar));
             System.out.println("Barra de vida del militar: " + healthbarmilitar);
             System.out.println("Daño adicional inflingido:");
-            System.out.println(ataquemutanteadicional);
+            System.out.println(ataquemutanteadicional = random.nextInt(20));
             System.out.println(" Vida restante del militar:");
             System.out.println(Math.max(vidamilitar -= ataquemutanteadicional, 0));
             healthbarmilitar = "-".repeat(Math.max(0, vidamilitar));
@@ -216,7 +274,9 @@ public class Videojuego2 {
 
         return 0;
     }
-    public static int endgame(){
+
+
+    public static int endgame() {
         if (vidamutante <= 0) {
             System.out.println("                                                                                                                      \n" +
                     "▀████▄     ▄███▀████▀████▀ ▀███▀▀███▀▀▀███    ▀████▀     █     ▀███▀████▀███▄   ▀███▀███▄   ▀███▀███▀▀▀███▀███▀▀▀██▄  \n" +
@@ -233,6 +293,162 @@ public class Videojuego2 {
                     "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
                     "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
 
+        } else if (vidamilitar <= 0) {
+            System.out.println("                                                                                                                                                          \n" +
+                    "▀████▄     ▄███▀███▀   ▀███▀██▀▀██▀▀███     ██     ▀███▄   ▀███▀██▀▀██▀▀███   ▀████▀     █     ▀███▀████▀███▄   ▀███▀███▄   ▀███▀███▀▀▀███▀███▀▀▀██▄      \n" +
+                    "  ████    ████  ██       █ █▀   ██   ▀█    ▄██▄      ███▄    █ █▀   ██   ▀█     ▀██     ▄██     ▄█   ██   ███▄    █   ███▄    █   ██    ▀█  ██   ▀██▄     \n" +
+                    "  █ ██   ▄█ ██  ██       █      ██        ▄█▀██▄     █ ███   █      ██           ██▄   ▄███▄   ▄█    ██   █ ███   █   █ ███   █   ██   █    ██   ▄██      \n" +
+                    "  █  ██  █▀ ██  ██       █      ██       ▄█  ▀██     █  ▀██▄ █      ██            ██▄  █▀ ██▄  █▀    ██   █  ▀██▄ █   █  ▀██▄ █   ██████    ███████       \n" +
+                    "  █  ██▄█▀  ██  ██       █      ██       ████████    █   ▀██▄█      ██            ▀██ █▀  ▀██ █▀     ██   █   ▀██▄█   █   ▀██▄█   ██   █  ▄ ██  ██▄       \n" +
+                    "  █  ▀██▀   ██  ██▄     ▄█      ██      █▀      ██   █     ███      ██             ▄██▄    ▄██▄      ██   █     ███   █     ███   ██     ▄█ ██   ▀██▄     \n" +
+                    "▄███▄ ▀▀  ▄████▄ ▀██████▀▀    ▄████▄  ▄███▄   ▄████▄███▄    ██    ▄████▄            ██      ██     ▄████▄███▄    ██ ▄███▄    ██ ▄██████████████▄ ▄███▄    \n" +
+                    "                                                                                                                                                          \n" +
+                    "                                                                                                                                                          \n");
+
 
         }
+        return 0;
+    }
+
+    public static int startFight2() {
+
+
+        while (vidamedico > 0 && vidamutante > 0) {
+            System.out.println("Vida de Logan " + vidamedico);
+            System.out.println("Vida mutante " + vidamutante);
+            System.out.println("///////////////////////////////////////////////////////////////");
+            while (vidamedico > 0 & vidamutante > 0) {
+                velocidadmedico = random.nextInt(250);
+                velocidadmutante = random.nextInt(200);
+                if (velocidadmedico > velocidadmutante) {
+                    dañomedico();
+                } else if (velocidadmutante > velocidadmedico) {
+                    dañomutante2();
+                }
+            }
+            break;
+        }
+        if (vidamilitar <= 0 || vidamutante <= 0) {
+            endgame2();
+        }
+
+        return 0;
+    }
+
+    public static int dañomedico() {
+        ataquemedico = random.nextInt(40);
+        System.out.println("Turno de Logan");
+        if (defensamutante > 33) {
+            System.out.println("Daño de ataque:" + ataquemedico);
+            System.out.println("Defensa  del mutante nula");
+            System.out.println(" Vida restante del mutante:");
+            System.out.println(Math.max(vidamutante -= ataquemedico, 0));
+            healthbarmutante = "-".repeat(Math.max(0, vidamutante));
+            System.out.println("Barra de vida del mutante:" + healthbarmutante);
+            System.out.println("Daño adicional inflingido:");
+            System.out.println(ataqueadicionalmedico = random.nextInt(20));
+            System.out.println(" Vida restante del mutante:");
+            System.out.println(Math.max(vidamutante -= ataqueadicionalmedico, 0));
+            healthbarmutante = "-".repeat(Math.max(0, vidamutante));
+            System.out.println("Barra de vida del mutante: " + healthbarmutante);
+            System.out.println("///////////////////////////////////////////////////////////////");
+        } else if (defensamutante <= 33) {
+            System.out.println("Daño de ataque:" + ataquemedico);
+            System.out.println("Defensa  del mutante ejecutada");
+            System.out.println(" Vida restante del mutante:");
+            System.out.println(Math.max(0, vidamutante));
+            healthbarmutante = "-".repeat(Math.max(0, vidamutante));
+            System.out.println("Barra de vida del mutante: " + healthbarmutante);
+            System.out.println("Daño adicional inflingido:");
+            System.out.println(ataqueadicionalmedico = random.nextInt(20));
+            System.out.println(" Vida restante del mutante:");
+            System.out.println(Math.max(vidamutante -= ataqueadicionalmedico, 0));
+            healthbarmutante = "-".repeat(Math.max(0, vidamutante));
+            System.out.println("Barra de vida del mutante: " + healthbarmutante);
+            System.out.println("///////////////////////////////////////////////////////////////");
+
+
+        }
+        return 0;
+
+
+    }
+
+    public static int dañomutante2() {
+        ataquemutante = random.nextInt(50);
+        System.out.println("Turno del Mutante");
+        if (defensamedico > 33) {
+            System.out.println("Daño de ataque:" + ataquemutante);
+            System.out.println("Defensa de Logan nula ");
+            System.out.println(" Vida restante de Logan:");
+            System.out.println(Math.max(vidamedico -= ataquemutante, 0));
+            healthbarmedico = "-".repeat(Math.max(0, vidamedico));
+            System.out.println("Barra de vida de Logan: " + healthbarmedico);
+            System.out.println("Daño adicional inflingido:");
+            System.out.println(ataquemutanteadicional = random.nextInt(20));
+            System.out.println(" Vida restante de Logan:");
+            System.out.println(Math.max(vidamedico -= ataquemutanteadicional, 0));
+            healthbarmedico = "-".repeat(Math.max(0, vidamedico));
+            System.out.println("Barra de vida del militar: " + healthbarmedico);
+            System.out.println("///////////////////////////////////////////////////////////////");
+        } else if (defensamedico <= 33) {
+            System.out.println("Daño de ataque:" + ataquemutante);
+            System.out.println("Defensa de Logan ejecutada ");
+            System.out.println(" Vida restante de Logan:");
+            System.out.println(Math.max(vidamedico, 0));
+            healthbarmedico = "-".repeat(Math.max(0, vidamedico));
+            System.out.println("Barra de vida de Logan: " + healthbarmedico);
+            System.out.println("Daño adicional inflingido:");
+            System.out.println(ataquemutanteadicional = random.nextInt(20));
+            System.out.println(" Vida restante de Logan:");
+            System.out.println(Math.max(vidamedico -= ataquemutanteadicional, 0));
+            healthbarmedico = "-".repeat(Math.max(0, vidamedico));
+            System.out.println("Barra de vida del militar: " + healthbarmedico);
+            System.out.println("///////////////////////////////////////////////////////////////");
+        }
+
+
+        return 0;
+    }
+
+
+    public static int endgame2() {
+        if (vidamutante <= 0) {
+            System.out.println("                                                                                                                                    \n" +
+                    "▀████▀     ▄▄█▀▀██▄   ▄▄█▀▀▀█▄█      ██     ▀███▄   ▀███▀   ▀████▀     █     ▀███▀████▀███▄   ▀███▀███▄   ▀███▀███▀▀▀███▀███▀▀▀██▄  \n" +
+                    "  ██     ▄██▀    ▀██▄██▀     ▀█     ▄██▄      ███▄    █       ▀██     ▄██     ▄█   ██   ███▄    █   ███▄    █   ██    ▀█  ██   ▀██▄ \n" +
+                    "  ██     ██▀      ▀███▀       ▀    ▄█▀██▄     █ ███   █        ██▄   ▄███▄   ▄█    ██   █ ███   █   █ ███   █   ██   █    ██   ▄██  \n" +
+                    "  ██     ██        ███            ▄█  ▀██     █  ▀██▄ █         ██▄  █▀ ██▄  █▀    ██   █  ▀██▄ █   █  ▀██▄ █   ██████    ███████   \n" +
+                    "  ██     ▄█▄      ▄███▄    ▀████  ████████    █   ▀██▄█         ▀██ █▀  ▀██ █▀     ██   █   ▀██▄█   █   ▀██▄█   ██   █  ▄ ██  ██▄   \n" +
+                    "  ██    ▄███▄    ▄██▀██▄     ██  █▀      ██   █     ███          ▄██▄    ▄██▄      ██   █     ███   █     ███   ██     ▄█ ██   ▀██▄ \n" +
+                    "██████████ ▀▀████▀▀   ▀▀███████▄███▄   ▄████▄███▄    ██           ██      ██     ▄████▄███▄    ██ ▄███▄    ██ ▄██████████████▄ ▄███▄\n" +
+                    "                                                                                                                                    \n" +
+                    "                                                                                                                                    \n");
+
+            System.out.println("/////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                    "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                    "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+
+
+        } else if (vidamedico <= 0) {
+            System.out.println("                                                                                                                                                          \n" +
+                    "▀████▄     ▄███▀███▀   ▀███▀██▀▀██▀▀███     ██     ▀███▄   ▀███▀██▀▀██▀▀███   ▀████▀     █     ▀███▀████▀███▄   ▀███▀███▄   ▀███▀███▀▀▀███▀███▀▀▀██▄      \n" +
+                    "  ████    ████  ██       █ █▀   ██   ▀█    ▄██▄      ███▄    █ █▀   ██   ▀█     ▀██     ▄██     ▄█   ██   ███▄    █   ███▄    █   ██    ▀█  ██   ▀██▄     \n" +
+                    "  █ ██   ▄█ ██  ██       █      ██        ▄█▀██▄     █ ███   █      ██           ██▄   ▄███▄   ▄█    ██   █ ███   █   █ ███   █   ██   █    ██   ▄██      \n" +
+                    "  █  ██  █▀ ██  ██       █      ██       ▄█  ▀██     █  ▀██▄ █      ██            ██▄  █▀ ██▄  █▀    ██   █  ▀██▄ █   █  ▀██▄ █   ██████    ███████       \n" +
+                    "  █  ██▄█▀  ██  ██       █      ██       ████████    █   ▀██▄█      ██            ▀██ █▀  ▀██ █▀     ██   █   ▀██▄█   █   ▀██▄█   ██   █  ▄ ██  ██▄       \n" +
+                    "  █  ▀██▀   ██  ██▄     ▄█      ██      █▀      ██   █     ███      ██             ▄██▄    ▄██▄      ██   █     ███   █     ███   ██     ▄█ ██   ▀██▄     \n" +
+                    "▄███▄ ▀▀  ▄████▄ ▀██████▀▀    ▄████▄  ▄███▄   ▄████▄███▄    ██    ▄████▄            ██      ██     ▄████▄███▄    ██ ▄███▄    ██ ▄██████████████▄ ▄███▄    \n" +
+                    "                                                                                                                                                          \n" +
+                    "                                                                                                                                                          \n");
+
+            System.out.println("/////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                    "///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////" +
+                    "//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+
+
+        }
+        return 0;
+    }
 }
+
