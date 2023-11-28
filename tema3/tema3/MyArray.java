@@ -50,16 +50,21 @@ public class MyArray {
                     System.out.println("El resultado de la suma es:");
                     System.out.println(sumaVectores(miArray));
                     break;
-
                 case "f":
+                    System.out.println("El vector de la operación será [1]:[2]:[3]:[4]:[5]");
+                    System.out.println("El resultado de la resta es:");
+                    System.out.println(restaVectores(miArray));
+                    break;
+
+                case "g":
                    System.out.println(Arrays.toString(invertirArray(miArray)));
                    break;
 
-                case "g":
+                case "h":
                     System.out.println(capicuaArray(miArray));
                     break;
 
-                case "h":
+                case "i":
                     cont++;
 
 
@@ -77,9 +82,10 @@ public class MyArray {
         System.out.println("c) Saber cual es la media del vector");
         System.out.println("d) Saber si un elemento existe en el vector");
         System.out.println("e) Saber el resultado de la suma de los vectores");
-        System.out.println("f) Invertir el vector");
-        System.out.println("g) Saber si un vector es capicua");
-        System.out.println("h)Salir");
+        System.out.println("f) Saber la resta de los vectores");
+        System.out.println("g) Invertir el vector");
+        System.out.println("h) Saber si un vector es capicua");
+        System.out.println("i)Salir");
 
 
     }
@@ -164,7 +170,7 @@ public class MyArray {
             sumatorio2 +=tuArray[a];
 
         }
-        total=sumatorio1+sumatorio2;
+        total=sumatorio1-sumatorio2;
         return total;
 
 
