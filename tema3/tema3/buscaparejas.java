@@ -2,9 +2,10 @@ import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Random;
 import java.util.Scanner;
+
 public class buscaparejas {
     public static void main(String[] args) {
-        String[] animales = {"León", "León", "Mandril", "Mandril", "Suricata", "Suricata", "Facóquero", "Facóquero","Mono","Mono","Cebra", "Cebra", "Caballo","Caballo","Perro","Perro","Gato","Gato","Flamenco", "Flamenco"};
+        String[] animales = {"León", "León", "Mandril", "Mandril", "Suricata", "Suricata", "Facóquero", "Facóquero", "Mono", "Mono", "Cebra", "Cebra", "Caballo", "Caballo", "Perro", "Perro", "Gato", "Gato", "Flamenco", "Flamenco"};
 
         shuffleArray(animales);
 
@@ -46,7 +47,7 @@ public class buscaparejas {
     }
 
     public static void shuffleArray(String[] array) {
-        Random random  = new Random();
+        Random random = new Random();
         for (int i = array.length - 1; i > 0; i--) {
             int index = random.nextInt(i + 1);
             String temp = array[index];
