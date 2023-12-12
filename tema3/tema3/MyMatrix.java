@@ -41,6 +41,8 @@ public class MyMatrix {
         System.out.println(Arrays.deepToString(sumaMatriz(matriz1, matriz2)));
         System.out.println("La resta de nuetsra matriz con otra matriz equivalente es:");
         System.out.println(Arrays.deepToString(restaMatriz(matriz1, matriz2)));
+        System.out.println("¿Nuestra matriz es la matriz unidad? ");
+        System.out.println(matrizUnidad(matriz1));
 
 
     }
@@ -104,7 +106,7 @@ public class MyMatrix {
     public static boolean existeMatriz(int[][] matriz1) {
         Scanner in = new Scanner(System.in);
         boolean existeMatriz = false;
-        int a = in.nextInt();
+        int a=in.nextInt();
         for (int i = 0; i < matriz1.length; i++) {
             for (int j = 0; j < matriz1[i].length; j++) {
                 if (a == matriz1[i][j]) {
@@ -140,4 +142,23 @@ public class MyMatrix {
         }
         return matriz3;
     }
+    public static boolean matrizUnidad(int[][]matriz1){
+        boolean comprobacion=false;
+        int[][]matrizUnidad= new int [3][3];
+        matrizUnidad[0][0] = 1;
+        matrizUnidad[0][1] = 0;
+        matrizUnidad[0][2] = 0;
+        matrizUnidad[1][0] = 0;
+        matrizUnidad[1][1] = 1;
+        matrizUnidad[1][2] = 0;
+        matrizUnidad[2][0] = 0;
+        matrizUnidad[2][1] = 0;
+        matrizUnidad[2][2] = 1;
+        if(matriz1==matrizUnidad){
+            comprobacion=true;
+        }
+        return comprobacion;
+    }
+
 }
+
